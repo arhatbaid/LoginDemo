@@ -1,14 +1,17 @@
 <resources>
-    <string name="app_name">Social Shayari</string>
+    <string name="app_name">Material Login</string>
     <string name="drawer_open">Drawer Open</string>
     <string name="drawer_close">Drawer Close</string>
-
+    <!--Social Login-->
+    <string name="facebook_app_id">220368518403827</string>
 
     <!--Login n SignUp-->
     <string name="registration">Registration</string>
     <string name="login">Login</string>
     <string name="get_started">Get Started</string>
     <string name="forgot_password">Forgot Password?</string>
+    <string name="trans_onboard_login">onboard_login</string>
+    <string name="trans_login_base">login_base</string>
     <!--Profile-->
     <string name="description">Hugh Michael Jackman is an Australian actor, singer and producer. Jackman has won international recognition for playing different roles in various film genres. \n\nHe is best known for his long-running role as Wolverine in the X-Men film series, as well as for his lead roles in the romantic-comedy fantasy Kate &amp; Leopold (2001), the action-horror film Van Helsing (2004)...</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.arhat.SocialShayari;
+package com.arhat.SocialShayari.activity;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -8,7 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class ActBase extends AppCompatActivity {
+import com.arhat.SocialShayari.R;
+
+public class ActBaseNavigation extends AppCompatActivity {
 
     private DrawerLayout drawerLayout = null;
     private ActionBarDrawerToggle mDrawerToggle = null;

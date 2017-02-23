@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "706883544454",
+    "project_id": "firebase-social-shayari"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706883544454:android:8daf3d9ea0e309d2",
+        "android_client_info": {
+          "package_name": "com.arhat.SocialShayari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706883544454-pdbl4f6fqkk4s5512qe7pjvqt1a8h8cl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arhat.SocialShayari",
+            "certificate_hash": "054EB3D4AE809E4031A3F34372E4289FB2DD4BC9"
+          }
+        },
+        {
+          "client_id": "706883544454-jf23nk7ou1otf3vlt2o3hnkh5uma3voq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3khSsgWeSCKG7qb4bitecR7b-lOsSiJM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

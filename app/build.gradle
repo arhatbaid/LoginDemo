@@ -1,4 +1,19 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
 apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
 
 android {
     compileSdkVersion 25
@@ -31,5 +46,13 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.github.florent37:diagonallayout:1.0.2'
     compile 'com.flaviofaria:kenburnsview:1.0.7'
-    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.+'
+    compile 'com.google.android.gms:play-services-plus:10.0.1'
+    compile 'com.google.android.gms:play-services-auth:10.0.1'
+    compile('com.twitter.sdk.android:twitter:2.3.0@aar') {
+        transitive = true;
+    }
+    compile 'com.roughike:bottom-bar:2.1.1'
 }
+
+apply plugin: 'com.google.gms.google-services'

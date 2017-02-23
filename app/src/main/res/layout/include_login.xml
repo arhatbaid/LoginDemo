@@ -33,11 +33,12 @@
         android:layout_marginTop="70dp"
         android:src="@drawable/add"
         android:translationZ="15dp"
+        android:transitionName="@string/trans_login_base"
         app:backgroundTint="@android:color/holo_red_light"
         app:borderWidth="10dp"
         app:elevation="15dp"
-        app:rippleColor="@android:color/darker_gray"
-        app:fabSize="normal" />
+        app:fabSize="normal"
+        app:rippleColor="@android:color/darker_gray" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,13 +51,15 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <include
+        <com.arhat.SocialShayari.customview.MaterialEditText
             android:id="@+id/viewLoginUserName"
-            layout="@layout/include_signup_edittext" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-        <include
+        <com.arhat.SocialShayari.customview.MaterialEditText
             android:id="@+id/viewLoginPassword"
-            layout="@layout/include_signup_edittext" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
 
         <LinearLayout
@@ -70,7 +73,7 @@
                 android:id="@+id/imgFacebook"
                 android:layout_width="@dimen/img_login_socail"
                 android:layout_height="@dimen/img_login_socail"
-                android:layout_marginRight="@dimen/very_huge_padding"
+                android:layout_marginRight="@dimen/huge_padding"
                 android:src="@drawable/facebook" />
 
             <ImageView
@@ -84,7 +87,6 @@
                 android:id="@+id/imgTwitter"
                 android:layout_width="@dimen/img_login_socail"
                 android:layout_height="@dimen/img_login_socail"
-                android:layout_marginRight="@dimen/huge_padding"
                 android:src="@drawable/twitter" />
 
         </LinearLayout>

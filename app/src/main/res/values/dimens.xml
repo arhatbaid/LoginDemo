@@ -34,7 +34,7 @@
 
 
     <!--Act Login SignUp-->
-    <dimen name="img_edit_text">20dp</dimen>
+    <dimen name="img_edit_text">18dp</dimen>
     <dimen name="edit_text_view">2dp</dimen>
     <dimen name="edit_text_height">45dp</dimen>
     <dimen name="login_signup_header">100dp</dimen>

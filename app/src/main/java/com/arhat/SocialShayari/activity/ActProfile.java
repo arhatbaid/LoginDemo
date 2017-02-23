@@ -1,4 +1,4 @@
-package com.arhat.SocialShayari;
+package com.arhat.SocialShayari.activity;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -11,13 +11,10 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 
+import com.arhat.SocialShayari.R;
 import com.arhat.SocialShayari.customview.RoundedImageView;
 import com.flaviofaria.kenburnsview.KenBurnsView;
 import com.github.florent37.diagonallayout.DiagonalLayout;
-
-/**
- * Created by babu on 12/9/2016.
- */
 
 public class ActProfile extends AppCompatActivity {
 

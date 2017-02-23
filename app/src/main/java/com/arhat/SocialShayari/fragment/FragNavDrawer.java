@@ -12,8 +12,8 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.arhat.SocialShayari.ActBase;
-import com.arhat.SocialShayari.ActProfile;
+import com.arhat.SocialShayari.activity.ActBaseNavigation;
+import com.arhat.SocialShayari.activity.ActProfile;
 import com.arhat.SocialShayari.R;
 import com.arhat.SocialShayari.customview.RoundedImageView;
 
@@ -31,7 +31,7 @@ public class FragNavDrawer extends Fragment implements View.OnClickListener {
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-        context = (ActBase) activity;
+        context = (ActBaseNavigation) activity;
     }
 
     @Nullable

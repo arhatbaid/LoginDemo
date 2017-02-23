@@ -33,7 +33,8 @@
             android:layout_weight="0.90"
             android:orientation="horizontal"
             app:cardBackgroundColor="@android:color/white"
-            app:cardElevation="@dimen/profile_cover_pic_elevation"
+            app:cardElevation="10dp"
+            android:transitionName="@string/trans_onboard_login"
             app:cardUseCompatPadding="true">
 
 
@@ -45,7 +46,8 @@
 
             <include
                 android:id="@+id/viewLogin"
-                layout="@layout/include_login" />
+                layout="@layout/include_login"
+                android:visibility="gone"/>
 
             <View
                 android:id="@+id/viewTemp"

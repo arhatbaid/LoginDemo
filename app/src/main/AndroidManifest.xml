@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.arhat.SocialShayari">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Permissions for Google+ -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,8 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ActLoginSignUp"
-            android:noHistory="true"
+            android:name=".activity.ActOnboarding"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,15 +23,45 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ActBase"
+            android:name=".activity.ActLoginSignUp"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.ActBaseNavigation"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ActProfile"
-            android:screenOrientation="portrait" /><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+            android:name=".activity.ActHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActProfile"
+            android:screenOrientation="portrait" />
+
+        <!--Facebook-->
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/facebook_app_id" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="215439c53d24921c6476466b93614e91b5251c3e" />
     </application>
 
 </manifest>
